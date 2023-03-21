@@ -7,64 +7,77 @@
     <title>Document</title>
     <style>
       table,
-      tr,
       td {
         border: 1px solid #000;
-        border-collapse: collapse;
       }
 
-      table tr td {
-        width: 200px;
+      td {
+        width: 50px;
+        height: 50px;
       }
     </style>
   </head>
   <body>
-    <table>
+    <!-- Display: flex; gap: 0 80px; O primeiro valor - 0 - é o espaço 
+    entre os itens na altura e o segundo valor - 40 px - é o espaço entre 
+    os itens na largura -->
+    <table style="display: inline-table; margin-right: 80px">
       <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
+        <td style="width: 150px; height: 50px" colspan="3"></td>
       </tr>
-      <tr style="text-align: center">
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
-      <tr style="text-align: right">
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
     </table>
-    <br />
-    <table>
+
+    <table style="display: inline-table; margin-right: 80px">
       <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
-      <tr style="text-align: center">
-        <td colspan="3">4</td>
+        <td rowspan="3"></td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
       </tr>
     </table>
-    <br />
-    <table>
+
+    <table style="display: inline-table">
       <tr>
-        <td>1</td>
-        <td>2</td>
-        <td rowspan="3">3</td>
-      </tr>
-      <tr style="text-align: center">
-        <td colspan="2">4</td>
+        <td colspan="5"></td>
       </tr>
       <tr>
-        <td>5</td>
-        <td>6</td>
+        <td rowspan="4"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td rowspan="2"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+        <td></td>
       </tr>
     </table>
   </body>
